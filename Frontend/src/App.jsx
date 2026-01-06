@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import axios from './api/axiosconfig'
 import { asyncgetusers } from "./store/userActions";
 import { useDispatch, useSelector } from 'react-redux';
+import Mainroutes from './routes/Mainroutes';
+import Navbar from './components/Navbar';
 
 const App = () => {
   // const getproducts = async () => {
@@ -23,8 +25,10 @@ const App = () => {
     dispatch(asyncgetusers())
   }, [])
   
-  return (
-    <div>App</div>
+  return (<div>
+    <Navbar/>
+    <Mainroutes/>
+    </div>
   )
 }
 

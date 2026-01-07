@@ -15,19 +15,20 @@ const App = () => {
   //   }
   // }
 
-  const data = useSelector((state) => state  );
+  const data = useSelector((state) => state);
   console.log(data);
-  
+
   const dispatch = useDispatch();
 
-  useEffect(()=>{
+  useEffect(() => {
     // getproducts()
     dispatch(asyncgetusers())
   }, [])
-  
-  return (<div>
-    <Navbar/>
-    <Mainroutes/>
+
+  return (
+    <div className='px-3'>
+      <Navbar />
+      <Mainroutes />
     </div>
   )
 }

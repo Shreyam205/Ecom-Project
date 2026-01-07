@@ -3,10 +3,10 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className='flex justify-end items-center lg:gap-10'>
+    <nav className='flex justify-center lg:justify-end items-center gap-5 lg:gap-10 py-2'>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/products">Products</NavLink>
-        <NavLink to="/contact">Contact Us</NavLink>
+        <NavLink to="/login">Login</NavLink>
         <NavLink to="/help">Help</NavLink>
     </nav>
   )

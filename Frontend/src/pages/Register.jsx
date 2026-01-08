@@ -1,14 +1,22 @@
 import { useForm } from 'react-hook-form'
 import { nanoid } from "nanoid"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { asyncregisteruser } from '../store/userActions'
+import {useDispatch} from 'react-redux'
 
 const Register = () => {
 
   const { register, reset, handleSubmit } = useForm()
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
 
   const RegisterHandler = (user) => {
     user.id = nanoid()
     console.log(user);
+    dispatch(asyncregisteruser(user))
+
+    reset()
+    navigate("/login")
   }
   
   return (

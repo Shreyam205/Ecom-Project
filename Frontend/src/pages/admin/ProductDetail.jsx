@@ -1,26 +1,47 @@
-import { useForm } from 'react-hook-form'
-import { nanoid } from "nanoid"
-import { useNavigate } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
-import { asynccreateproduct } from '../../store/actions/productActions'
+import { useSelector, useDispatch } from "react-redux"
+import { useParams, useNavigate } from "react-router-dom"
+import { useForm } from "react-hook-form"
 
-const CreateProduct = () => {
-    const { register, reset, handleSubmit } = useForm()
+const ProductDetail = () => {
+    const {id} = useParams()
+    const products = useSelector((state) => state.productReducer.products)
+    const product = products?.find((product) => product.id == id)
+    console.log(product);
+
+
+    const { register, reset, handleSubmit } = useForm({
+        defaultValues: {
+            image: product?.image,
+            title: product?.title,
+            price: product?.price,
+            category: product?.category,
+            description: product?.description,
+        }
+    })
     const dispatch = useDispatch()
     const navigate = useNavigate()
 
-    const CreateProductHandler = (product) => {
-        product.id = nanoid()
-        console.log(product);
-        dispatch(asynccreateproduct(product))
-
-        reset()
-        navigate("/products")
+    const UpdateProductHandler = (product) => {
+        dispatch(asyncupdateproduct(product))
     }
 
-    return (
-        <div className='flex justify-center items-center mt-10'>
-            <form onSubmit={handleSubmit(CreateProductHandler)}
+    
+  return product?(
+    <>
+    <div className="flex p-5 gap-5">
+        <img src={product.image} 
+            alt="loading"
+            className="w-1/2"
+         />
+        <div className="flex flex-col gap-5">
+            <h1>{product.title}</h1>
+            <h2>₹{product.price}</h2>
+            <p>{product.description}</p>
+            <button>Add to cart</button>
+        </div>
+    </div>
+    <div className='flex justify-center items-center mt-10'>
+            <form onSubmit={handleSubmit(UpdateProductHandler)}
                 className='flex flex-col lg:w-1/2 w-full gap-5'>
                 <input
                     {...register("image")}
@@ -49,7 +70,8 @@ const CreateProduct = () => {
                 <button className='bg-blue-500 p-2 rounded-md'>Create Product</button>
             </form>
         </div>
-    )
+    </>
+  ) : "Loading..."
 }
 
-export default CreateProduct
+export default ProductDetail

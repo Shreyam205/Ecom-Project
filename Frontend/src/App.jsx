@@ -3,6 +3,7 @@ import { asynccurrentuser } from "./store/userActions";
 import { useDispatch } from 'react-redux';
 import Mainroutes from './routes/Mainroutes';
 import Navbar from './components/Navbar';
+import { asyncloadproducts } from './store/actions/productActions';
 
 const App = () => {
   // const getproducts = async () => {
@@ -16,6 +17,7 @@ const App = () => {
 
   const dispatch = useDispatch();
   useEffect(() => {
+    dispatch(asyncloadproducts())
     dispatch(asynccurrentuser())
   }, [] )
 

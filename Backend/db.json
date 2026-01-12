@@ -41,6 +41,12 @@
       "username": "Alex Head",
       "email": "head@alex.com",
       "password": "123456"
+    },
+    {
+      "id": "Q09MT96tTswT1fcDdX9yW",
+      "username": "Enzo Maf",
+      "email": "enzo@maf.com",
+      "password": "123456"
     }
   ],
   "products": [

@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react'
-import axios from './api/axiosconfig'
-import { asyncgetusers } from "./store/userActions";
-import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react'
+import { asynccurrentuser } from "./store/userActions";
+import { useDispatch } from 'react-redux';
 import Mainroutes from './routes/Mainroutes';
 import Navbar from './components/Navbar';
 
@@ -15,18 +14,23 @@ const App = () => {
   //   }
   // }
 
-  const data = useSelector((state) => state);
-  console.log(data);
-
   const dispatch = useDispatch();
-
   useEffect(() => {
-    // getproducts()
-    dispatch(asyncgetusers())
-  }, [])
+    dispatch(asynccurrentuser())
+  }, [] )
+
+  // const data = useSelector((state) => state);
+  // console.log(data);
+
+  
+
+  // useEffect(() => {
+  //   // getproducts()
+  //   dispatch(asyncgetusers())
+  // }, [])
 
   return (
-    <div className='px-3'>
+    <div>
       <Navbar />
       <Mainroutes />
     </div>

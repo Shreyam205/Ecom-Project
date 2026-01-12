@@ -1,17 +1,49 @@
 import axios from '../api/axiosconfig'
 import { loaduser } from './reducers/userSlice';
 
-export const asyncgetusers = () => async (dispatch, getState) => {
+
+export const asynccurrentuser = () => async (dispatch, getState) => {
   try {
-
-    console.log(getState());
-
-    const res = await axios.get("/users")
-    dispatch(loaduser(res.data))
+    const user = JSON.parse(localStorage.getItem("user"))
+    if(user) dispatch(loaduser(user))
+    else console.log("Incorrect email or password");
   } catch (error) {
     console.log(error);
   }
 }
+
+export const asynclogoutuser = (user) => async (dispatch, getState) => {
+  try {
+    localStorage.removeItem("user")
+    console.log("User Logged Out!");
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+
+export const asyncloginuser = (user) => async (dispatch, getState) => {
+  try {
+    const { data } = await axios.get(`/users?email=${user.email}&password=${user.password}`)
+    // console.log(data[0]);
+    localStorage.setItem("user", JSON.stringify(data[0]))
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+
+// export const asyncgetusers = () => async (dispatch, getState) => {
+//   try {
+
+//     console.log(getState());
+
+//     const res = await axios.get("/users")
+//     dispatch(loaduser(res.data))
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
 
 export const asyncregisteruser = (user) => async(dispatch, getState) => {

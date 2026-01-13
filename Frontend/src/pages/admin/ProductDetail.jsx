@@ -1,12 +1,16 @@
 import { useSelector, useDispatch } from "react-redux"
 import { useParams, useNavigate } from "react-router-dom"
 import { useForm } from "react-hook-form"
+import { asyncdeleteproduct, asyncupdateproduct } from "../../store/actions/productActions"
 
 const ProductDetail = () => {
     const {id} = useParams()
-    const products = useSelector((state) => state.productReducer.products)
+    const {
+        productReducer: {products},
+        userReducer: {users},
+    } = useSelector((state) => state)
     const product = products?.find((product) => product.id == id)
-    console.log(product);
+    console.log(product, users);
 
 
     const { register, reset, handleSubmit } = useForm({
@@ -22,9 +26,14 @@ const ProductDetail = () => {
     const navigate = useNavigate()
 
     const UpdateProductHandler = (product) => {
-        dispatch(asyncupdateproduct(product))
+        dispatch(asyncupdateproduct(id, product))
     }
 
+    const DeleteHandler = () => {
+        dispatch(asyncdeleteproduct(id))
+        navigate("/products")
+    }
+    
     
   return product?(
     <>
@@ -40,7 +49,7 @@ const ProductDetail = () => {
             <button>Add to cart</button>
         </div>
     </div>
-    <div className='flex justify-center items-center mt-10'>
+    {users && users?.isAdmin && <div className='flex justify-center items-center p-5 mt-10 gap-10'>
             <form onSubmit={handleSubmit(UpdateProductHandler)}
                 className='flex flex-col lg:w-1/2 w-full gap-5'>
                 <input
@@ -67,9 +76,15 @@ const ProductDetail = () => {
                     type="text"
                     className='mb-3 outline-0 border-b p-2 text-xl'
                     placeholder='Enter Category' />
-                <button className='bg-blue-500 p-2 rounded-md'>Create Product</button>
+                <button className='bg-blue-500 p-2 rounded-md'>Update Product</button>
             </form>
-        </div>
+            <button
+            className=" bg-red-500 p-2 rounded-md"
+            onClick={DeleteHandler}>
+                Delete Product
+            </button>
+        </div>}
+    
     </>
   ) : "Loading..."
 }

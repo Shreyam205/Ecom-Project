@@ -4,57 +4,44 @@
       "id": "jghwfgh453hrgh4fg24",
       "username": "Lana Rodes",
       "email": "lana@rodes.com",
-      "password": "123456"
-    },
-    {
-      "id": "9_yL9R5tKHP4pI-eW8EGM",
-      "username": "Laura James",
-      "email": "laura@james.com",
-      "password": "123456"
-    },
-    {
-      "id": "Wlqr64RcgUzaEVRpPPEVY",
-      "username": "Laura williams",
-      "email": "laura@williams.com",
-      "password": "123456"
-    },
-    {
-      "id": "Y3yP2-4cIHsgUKE17FBvJ",
-      "username": "kane roy",
-      "email": "kane@roy.com",
-      "password": "123456"
+      "password": "123456",
+      "isAdmin":false
     },
     {
       "id": "bRm8pwip0QuTnqM4jc0VC",
       "username": "john doe",
       "email": "johndoe@gmail.com",
-      "password": "123456"
+      "password": "123456",
+      "isAdmin":false
     },
     {
       "id": "tO-OTP3RKAlHMQp3ttqeC",
       "username": "james anderson",
       "email": "james@andy.com",
-      "password": "123456"
+      "password": "123456",
+      "isAdmin":false
     },
     {
       "id": "1uSRQ9Us65yGeiMVlufKf",
       "username": "Alex Head",
       "email": "head@alex.com",
-      "password": "123456"
+      "password": "123456",
+      "isAdmin":false
     },
     {
       "id": "Q09MT96tTswT1fcDdX9yW",
       "username": "Enzo Maf",
       "email": "enzo@maf.com",
-      "password": "123456"
+      "password": "123456",
+      "isAdmin": true
     }
   ],
   "products": [
     {
       "id": "dfiy4h6r51n1fg4bb",
       "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-      "price": 109.95,
-      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "price": "109",
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday (updated)",
       "category": "men's clothing",
       "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"
     },

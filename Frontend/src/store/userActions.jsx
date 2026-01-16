@@ -64,3 +64,12 @@ export const asyncupdateuser = (id, user) => async(dispatch, getState) => {
     console.log(error);
   }
 }
+
+export const asyncdeleteuser = (id) => async (dispatch, getState) => {
+    try {
+        await axios.delete("/users/" + id)
+        dispatch(asynclogoutuser())
+    } catch (error) {
+        console.log(error);
+    }
+}

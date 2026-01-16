@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import { asyncupdateuser } from '../../store/userActions'
+import { asyncdeleteuser, asyncupdateuser } from '../../store/userActions'
 
 const UserProfile = () => {
 
@@ -25,11 +25,16 @@ const UserProfile = () => {
     }
 
     const DeleteHandler = () => {
-        navigate("/products")
+        dispatch(asyncdeleteuser(users.id))
+        navigate("/login")
     }
 
   return users ? (
-    <div>
+    <div className='p-3 flex flex-col gap-10 items-center justify-center'>
+        <div>
+            <h1 className='text-5xl'>{users.username}</h1>
+            <small className='font-thin text-2xl'>{users.email}</small>
+        </div>
         <form onSubmit={handleSubmit(UpdateUserHandler)}
                 className='flex flex-col lg:w-1/2 w-full gap-5'>
                 <input
@@ -57,7 +62,7 @@ const UserProfile = () => {
                 Delete User
             </button>
     </div>
-  ) : "Loading..."
+  ) : <div className='p-3'>Loading...</div>
 }
 
 export default UserProfile

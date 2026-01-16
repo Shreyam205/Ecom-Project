@@ -20,7 +20,10 @@ const Navbar = () => {
       <NavLink to="/products">Products</NavLink>
       {user ? (
         <>
-          <NavLink to="/admin/create-product">Create Product</NavLink>
+          {user && user?.isAdmin && <NavLink to="/admin/create-product">
+              Create Product
+          </NavLink>}
+          
           <NavLink to="/user-profile">Profile</NavLink>
           <button onClick={LogoutHandler}>Logout</button>
         </>

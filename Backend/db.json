@@ -22,13 +22,6 @@
       "isAdmin": false
     },
     {
-      "id": "1uSRQ9Us65yGeiMVlufKf",
-      "username": "Alex Head",
-      "email": "head@alex.com",
-      "password": "123456",
-      "isAdmin": false
-    },
-    {
       "id": "Q09MT96tTswT1fcDdX9yW",
       "username": "Enzo Maf",
       "email": "enzo@maf.com",
@@ -52,6 +45,30 @@
       "price": 10000,
       "description": "Samsung 27 Inch Gaming Monitor QHD 2,560 x 1,440 Resolution OLED Display Monitor\nAspect Ratio: 16:09 | 178°(H)/178°(V) Viewing Angle | 1 Billion Color Support | 200 cd/㎡ Brightness (Typical) | 1,000,000:1 Contrast Ratio | Refresh Rate: 180 Hz | Response Time: 0.03 ms\nQHD resolution & OLED panel | HDR10 | 180Hz refresh rate & 0.03ms response time(GtG) | FreeSync | G-Sync | Eye Saver Mode & Less Screen Flickering | Tilt -2˚(±2˚) ~ 15˚(±2˚) | Wall Mount Compatible\nAdditional Features: Quantum Dot Color | HDR10 | Color Gamut (DCI Coverage) 99% | Eye Saver Mode | Flicker Free | Off Timer Plus | Black Equalizer | Virtual AIM Point | Super Arena Gaming UX | Auto Source Switch+ | Image Size\nConnectivity options: Display Port, Display Port Version 1.2, HDCP Version (DP) 2.2, HDMI, HDMI 2.0 Version, HDCP 2.2 Version (HDMI), Headphone Jack || 3-Year Warranty from Manufacturer",
       "category": "Electronic"
+    },
+    {
+      "id": "T0sjVEUI2FnPBSCDT98uJ",
+      "image": "https://m.media-amazon.com/images/I/61r4lrp65bL._SL1500_.jpg",
+      "title": "AULA F75 75% Wireless Mechanical Keyboard",
+      "price": "5699",
+      "description": "【Tri-mode Connection Keyboard】AULA F75 wireless mechanical keyboard supports Bluetooth, 2.4GHz wireless and USB wired connection, can connect up to five devices at the same time, and easily switch by shortcut keys or side button. F75 computer keyboard is suitable for PC, laptops, tablets, mobile phones, PS, XBOX etc, to meet all the needs of users. In addition, the rechargeable keyboard is equipped with a 4000mAh large-capacity battery, which has long-lasting battery life.\n【Hot-swap Custom Keyboard】This custom mechanical keyboard with hot-swappable base supports 3-pin or 5-pin switches replacement. Even keyboard beginners can easily DIY there own keyboards without soldering issue. F75 gaming keyboards equipped with pre-lubricated stabilizers and LEOBOG Graywood V3 switches, bring smooth typing feeling and pleasant creamy mechanical sound, provide fast response for exciting game.\n【Gasket Structure & PCB Single Key Slotting】This thock heavy mechanical keyboard features a gasket structure, extended integrated silicone pad, and PCB single key slotting, better optimizes resilience and stability, making the hand feel softer and more elastic. Five layers of filling silencer fills the gap between the PCB, the positioning plate and the shaft,effectively counteracting the cavity noise sound of the shaft hitting the positioning plate, and providing a solid feel.\n【16.8 Million RGB Backlit】F75 light up led keyboard features 16.8 million RGB lighting color. With 16 pre-set lighting effects to add a great atmosphere to the game. And supports 10 cool music rhythm lighting effects with driver. Lighting brightness and speed can be adjusted by the knob or the FN+key combination. You can select the single color effect as wish. And if you can turn the backlight off if you do not need it.\n【Professional Gaming Keyboard】No matter the outlook, the construction, or the function, F75 mechanical keyboard is definitely a professional gaming keyboard. This 80-key 75% layout compact keyboard can save more desktop space while retaining the necessary arrow keys for gaming. Additionally, with the multi-function knob, you can easily control the backlight and Media.\n【Multi-function Control Knob】This AULA 75% wireless gaming keyboard is equipped with functional knob to switch gaming mode or office mode. In gaming mode, you can rotate the knob to adjust the brightness of the lights, and click the knob to switch the lighting effects easily; in office mode, rotate the knob to adjust the volume, and click the knob to play or pause. Long press the knob for about 5 seconds to switch modes.\nNOTE: Listing color will not match 100% with the physical product color.\nNOTE: 1 Year warranty from the date of purchase for manufacturing defect only.",
+      "category": "Electronic"
+    },
+    {
+      "id": "B__j_J9zBpX3Fk2qV6x-j",
+      "image": "https://m.media-amazon.com/images/I/51X49vVPZ2L._SL1200_.jpg",
+      "title": "Cosmic Byte Ares Tri-Mode Wireless Controller for PC",
+      "price": "1799",
+      "description": "TRI-MODE CONNECTIVITY – 2.4GHz Wireless, Bluetooth & USB-C Wired for ultimate flexibility.\nHALL EFFECT PRECISION – Drift-free joysticks & triggers built for long-term accuracy.\n700mAh RECHARGEABLE BATTERY – Hours of continuous gaming on a single charge.\nTURBO & AUTO TURBO FUNCTIONS – Gain a rapid-fire edge in competitive play.\nIMMERSIVE DUAL VIBRATION – Feel every hit, crash, and explosion.\nWIDE COMPATIBILITY – Works with PC, Android, and iOS (MFi-supported games).\n",
+      "category": "Electronic"
+    },
+    {
+      "id": "VtE020sn4bOBCXesZS-XN",
+      "image": "https://m.media-amazon.com/images/I/719cXkOFmXL._SL1080_.jpg",
+      "title": "Classmate Pulse 6 Subject Spiral Notebook - Pack of 3",
+      "price": "349",
+      "description": "The cover design of the notebook is subject to change, it depends on stock availability\nUnruled notebook, 300 pages, spiral binding, soft cover, 240mm x180mm\nClassmate uses eco friendly and elemental chlorine free paper\nThis notebook consists of papers",
+      "category": "stationery"
     }
   ],
   "profile": {

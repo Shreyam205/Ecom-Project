@@ -42,7 +42,7 @@
       "id": "6ohGBLoUENk6Y4xMQlXJI",
       "image": "https://m.media-amazon.com/images/I/818+AiwCClL._SL1500_.jpg",
       "title": "Samsung 27\" Odyssey QD-OLED G5 Gaming Monitor",
-      "price": 10000,
+      "price": "100000",
       "description": "Samsung 27 Inch Gaming Monitor QHD 2,560 x 1,440 Resolution OLED Display Monitor\nAspect Ratio: 16:09 | 178°(H)/178°(V) Viewing Angle | 1 Billion Color Support | 200 cd/㎡ Brightness (Typical) | 1,000,000:1 Contrast Ratio | Refresh Rate: 180 Hz | Response Time: 0.03 ms\nQHD resolution & OLED panel | HDR10 | 180Hz refresh rate & 0.03ms response time(GtG) | FreeSync | G-Sync | Eye Saver Mode & Less Screen Flickering | Tilt -2˚(±2˚) ~ 15˚(±2˚) | Wall Mount Compatible\nAdditional Features: Quantum Dot Color | HDR10 | Color Gamut (DCI Coverage) 99% | Eye Saver Mode | Flicker Free | Off Timer Plus | Black Equalizer | Virtual AIM Point | Super Arena Gaming UX | Auto Source Switch+ | Image Size\nConnectivity options: Display Port, Display Port Version 1.2, HDCP Version (DP) 2.2, HDMI, HDMI 2.0 Version, HDCP 2.2 Version (HDMI), Headphone Jack || 3-Year Warranty from Manufacturer",
       "category": "Electronic"
     },
@@ -69,6 +69,14 @@
       "price": "349",
       "description": "The cover design of the notebook is subject to change, it depends on stock availability\nUnruled notebook, 300 pages, spiral binding, soft cover, 240mm x180mm\nClassmate uses eco friendly and elemental chlorine free paper\nThis notebook consists of papers",
       "category": "stationery"
+    },
+    {
+      "id": "xFQxuI3S4wQ_9O1TNzBFW",
+      "image": "https://m.media-amazon.com/images/I/71z4m6euLiL._SL1500_.jpg",
+      "title": "Ferrero Rocher Moments, 16 Pcs Chocolate,92.8 Gram",
+      "price": "299",
+      "description": "Ferrero Rocher Moments carefully designed recipe and hermetic pack maintains its extraordinary taste, to keep it perfect even in tropical climates\nMake the Moment Perfect with Ferrero Rocher Moments\nFerrero Rocher Moments’ carefully designed recipe and hermetic pack maintain its extraordinary taste, to keep it perfect even in tropical climates\nFerrero Rocher Moments are crafted to delight you and everyone around you.\nMake the moment perfect with Ferrero Rocher",
+      "category": "chocolate"
     }
   ],
   "profile": {

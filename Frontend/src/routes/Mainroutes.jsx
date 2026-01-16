@@ -6,6 +6,7 @@ import Register from "../pages/Register";
 import CreateProduct from "../pages/admin/CreateProduct";
 import ProductDetail from "../pages/admin/ProductDetail";
 import PageNotFound from '../pages/PageNotFound'
+import UserProfile from "../pages/user/UserProfile";
 
 const Mainroutes = () => {
   return (
@@ -16,6 +17,7 @@ const Mainroutes = () => {
         <Route path="/register" element={<Register/>}/>
 
         <Route path="/admin/create-product" element={<CreateProduct/>}/>
+        <Route path="/user-profile" element={<UserProfile/>}/>
         <Route path="/product/:id" element={<ProductDetail/>}/>
 
         <Route path="*" element={<PageNotFound/>}/>

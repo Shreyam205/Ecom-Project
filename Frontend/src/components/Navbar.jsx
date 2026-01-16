@@ -21,6 +21,7 @@ const Navbar = () => {
       {user ? (
         <>
           <NavLink to="/admin/create-product">Create Product</NavLink>
+          <NavLink to="/user-profile">Profile</NavLink>
           <button onClick={LogoutHandler}>Logout</button>
         </>
       ) : (

@@ -7,15 +7,28 @@ import CreateProduct from "../pages/admin/CreateProduct";
 import ProductDetail from "../pages/admin/ProductDetail";
 import PageNotFound from '../pages/PageNotFound'
 import UserProfile from "../pages/user/UserProfile";
-import AuthWrapper from "./AuthWrapper";
+import AuthWrapper, { Auth2 } from "./AuthWrapper";
 
 const Mainroutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/products" element={<Products />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
+
+      <Route
+        path="/login"
+        element={
+          <Auth2>
+            <Login />
+          </Auth2>
+        } />
+      <Route
+        path="/register"
+        element={
+          <Auth2>
+            <Register />
+          </Auth2>
+        } />
 
       <Route
         path="/admin/create-product"

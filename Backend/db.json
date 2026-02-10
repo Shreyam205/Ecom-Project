@@ -5,28 +5,45 @@
       "username": "Lana Rodes",
       "email": "lana@rodes.com",
       "password": "123456",
-      "isAdmin": false
+      "isAdmin": false,
+      "cart": []
     },
     {
       "id": "bRm8pwip0QuTnqM4jc0VC",
       "username": "john doe",
       "email": "johndoe@gmail.com",
       "password": "123456",
-      "isAdmin": false
+      "isAdmin": false,
+      "cart": []
     },
     {
       "id": "tO-OTP3RKAlHMQp3ttqeC",
       "username": "james anderson",
       "email": "james@andy.com",
       "password": "123456",
-      "isAdmin": false
+      "isAdmin": false,
+      "cart": []
     },
     {
       "id": "Q09MT96tTswT1fcDdX9yW",
       "username": "Enzo Maf",
       "email": "enzo@maf.com",
       "password": "123456",
-      "isAdmin": true
+      "isAdmin": true,
+      "cart": [
+        {
+          "productId": "B__j_J9zBpX3Fk2qV6x-j",
+          "quantity": 2
+        },
+        {
+          "productId": "6ohGBLoUENk6Y4xMQlXJI",
+          "quantity": 1
+        },
+        {
+          "productId": "dfiy4h6r51n1fg4bb",
+          "quantity": 9
+        }
+      ]
     }
   ],
   "products": [

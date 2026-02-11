@@ -8,6 +8,7 @@ import ProductDetail from "../pages/admin/ProductDetail";
 import PageNotFound from '../pages/PageNotFound'
 import UserProfile from "../pages/user/UserProfile";
 import AuthWrapper, { Auth2 } from "./AuthWrapper";
+import Cart from "../pages/Cart";
 
 const Mainroutes = () => {
   return (
@@ -49,6 +50,13 @@ const Mainroutes = () => {
         element={
           <AuthWrapper>
             <ProductDetail />
+          </AuthWrapper>
+        } />
+      <Route
+        path="/cart"
+        element={
+          <AuthWrapper>
+            <Cart />
           </AuthWrapper>
         } />
 

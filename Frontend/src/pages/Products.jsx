@@ -4,24 +4,21 @@ import {asyncupdateuser} from '../store/userActions'
 
 const Products = () => {
   const dispatch = useDispatch()
-  const {
-    userReducer: { users },
-    productReducer: { products },
-  } = useSelector((state) => state)
+  const users = useSelector((state) => state.userReducer.users)
+  const products = useSelector((state) => state.productReducer.products)
 
-  const AddtoCartHandler = (id) => {
-    const copyuser = { ...users, cart: [...users.cart] }
-    const x = copyuser.cart.findIndex((c) => c.productId == id)
+  const AddtoCartHandler = (product) => {
+    const copyuser = { ...users, cart: [...users.cart] } //deep-copy
+    const x = copyuser.cart.findIndex((c) => c?.product?.id == product.id)
 
     if (x == -1) {
-      copyuser.cart.push({ productId: id, quantity: 1 })
+      copyuser.cart.push({ product, quantity: 1 })
     } else {
       copyuser.cart[x] = {
-        productId: id,
+        product,
         quantity: copyuser.cart[x].quantity + 1,
       }
     }
-    console.log(copyuser);
     dispatch(asyncupdateuser(copyuser.id, copyuser))
   }
 
@@ -31,7 +28,7 @@ const Products = () => {
       <h1>{product.title}</h1>
       <small>{product.description.slice(0, 20)}...</small>
       <p>{product.price}</p>
-      <button onClick={() => AddtoCartHandler(product.id)}>Add to Cart</button>
+      <button onClick={() => AddtoCartHandler(product)}>Add to Cart</button>
       <Link className=' block w-full text-center' to={`/product/${product.id}`}>More Info</Link>
     </div>
   })

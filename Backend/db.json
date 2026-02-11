@@ -30,20 +30,7 @@
       "email": "enzo@maf.com",
       "password": "123456",
       "isAdmin": true,
-      "cart": [
-        {
-          "productId": "B__j_J9zBpX3Fk2qV6x-j",
-          "quantity": 2
-        },
-        {
-          "productId": "6ohGBLoUENk6Y4xMQlXJI",
-          "quantity": 1
-        },
-        {
-          "productId": "dfiy4h6r51n1fg4bb",
-          "quantity": 9
-        }
-      ]
+      "cart": []
     }
   ],
   "products": [

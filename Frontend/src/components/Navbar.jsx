@@ -24,6 +24,7 @@ const Navbar = () => {
               Create Product
           </NavLink>}
           
+          <NavLink to="/cart">Cart</NavLink>
           <NavLink to="/user-profile">Profile</NavLink>
           <button onClick={LogoutHandler}>Logout</button>
         </>

@@ -26,7 +26,7 @@ const CreateProduct = () => {
                     {...register("image")}
                     type="url"
                     className='mb-3 outline-0 border-b p-2 text-xl'
-                    placeholder='Enter Image URl' />
+                    placeholder='Enter Image URL' />
                 <input
                     {...register("title")}
                     type="text"
